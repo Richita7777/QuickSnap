@@ -147,7 +147,10 @@ namespace CardGames.GameLogic
 				//TODO: consider playing a sound here...
 			}
 
-			// stop the game...
+			else if ( player >= 0 && player < _score.Length)
+			{
+			_score[player]--;
+			}
 			_started = false;
                        _gameTimer.Stop ();
 		}
